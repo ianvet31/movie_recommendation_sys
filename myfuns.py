@@ -19,7 +19,8 @@ ratings['MovieID'] = ratings['MovieID'].astype(int)
 #url3="https://drive.google.com/uc?export=download&id=1NvQOFbcRHcz3GikOFHefUE56xQvhMzKn"
 url3="https://drive.google.com/uc?export=download&id=1-YheOIJNcXaGaS3Yyzj612QjQ24OSeoE" # Mini similarity matrix
 S30 = pd.read_csv(url3,index_col=0)
-names = S30.columns
+names=S30.index.tolist()
+#names = S30.columns
 
 url4="https://drive.google.com/uc?export=download&id=1tKUtZAx8sjq0yrEwAG6DqT-sqvtk49PV"
 genre_rec_lookup = pd.read_csv(url4,index_col=0)
