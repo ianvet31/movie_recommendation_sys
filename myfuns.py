@@ -17,7 +17,7 @@ ratings.columns = ['UserID', 'MovieID', 'Rating', 'Timestamp']
 ratings['MovieID'] = ratings['MovieID'].astype(int)
 
 #url3="https://drive.google.com/uc?export=download&id=1NvQOFbcRHcz3GikOFHefUE56xQvhMzKn"
-url3="https://drive.google.com/uc?export=download&id=1-c8j3eHJK0W8jg3_QCVkON6z4T6BmS1W" # Mini similarity matrix
+url3="https://drive.google.com/uc?export=download&id=1H1SvBdvJpdn8y6Cq7a3BvVgtsstz2r72" # Mini similarity matrix
 S30 = pd.read_csv(url3,index_col=0)
 names = S30.columns
 
