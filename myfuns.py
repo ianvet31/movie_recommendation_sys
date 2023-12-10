@@ -63,8 +63,8 @@ def genreRecommendation(genre, n=10): # n top picks of genre
 
 def myIBCF(newuser):
 
-  n=len(names)
-
+  #n=len(names)
+  n=S30.shape[0]
   # Code Block for handling passed dictionary of ratings in Dash, as opposed to full 3706, vector of ratings
 
   newuser_ = np.zeros((n,))
